@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import "./style.css";
 import { Link } from "react-router-dom";
 import { request } from "../../config/request";
+import { Button } from "../../components";
 
 export function MainPage() {
   const [value, setValue] = useState("");
@@ -24,7 +25,7 @@ export function MainPage() {
         <div className="body_title">Введите сюда ссылку которую надо сократить</div>
         <div className="input_wrapper">
           <input className="input" value={value} onChange={handleChangeValue} />
-          <div className="button" onClick={handleShorten}>Сократить</div>
+          <Button name="Сократить" className="button" onClick={handleShorten} />
         </div>
         {shortLink && <div>{shortLink}</div>}
       </div>

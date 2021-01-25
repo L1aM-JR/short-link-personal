@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
+import { Button } from "../../../../components";
 import "./style.css";
 
 export function Form(props) {
@@ -13,12 +14,14 @@ export function Form(props) {
     <div className="form">
       <div className="title">{props.title}</div>
       <input
+        className="form_input"
         onChange={onChangeEmail}
         value={email}
         placeholder="Введите email..."
         type="text"
       />
       <input
+        className="form_input"
         onChange={onChangePassword}
         value={password}
         placeholder="Введите пароль..."
@@ -26,7 +29,7 @@ export function Form(props) {
       />
       <div className="buttons">
         <Link className="link" to={props.linkUrl} children={props.linkName} />
-        <div onClick={props.confirmButtonOnClick}>{props.confirmButtonName}</div>
+        <Button name={props.confirmButtonName} onClick={props.confirmButtonOnClick} className="confirm_button" />
       </div>
     </div>
   );

@@ -60,13 +60,8 @@
 
 .button {
   padding: 5px 10px;
-  cursor: pointer;
   background: rgb(40, 40, 161);
-  border-radius: 5px;
   border: 1px solid grey;
-  display: flex;
-  align-items: center;
-  justify-content: center;
   width: 100px;
   height: 30px;
   color: #fff;

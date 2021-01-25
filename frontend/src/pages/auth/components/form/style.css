@@ -11,7 +11,7 @@
   margin-bottom: 10px;
 }
 
-input {
+.form_input {
   margin-bottom: 10px;
   padding: 10px 5px;
   border: 1px solid rgba(0, 0, 0, 0.15);
@@ -22,9 +22,17 @@ input {
 .buttons {
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 
 .link {
   text-decoration: none;
   color: #0000FF;
+}
+
+.confirm_button {
+  display: inline-flex;
+  padding: 5px 10px;
+  color: #fff;
+  background: rgb(40, 40, 161);;
 }
