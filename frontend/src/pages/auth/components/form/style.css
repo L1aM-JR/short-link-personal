@@ -1,0 +1,30 @@
+.form {
+  width: 400px;
+  display: flex;
+  flex-direction: column;
+}
+
+.title {
+  font-size: 24px;
+  color: #000;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+input {
+  margin-bottom: 10px;
+  padding: 10px 5px;
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.buttons {
+  display: flex;
+  justify-content: space-between;
+}
+
+.link {
+  text-decoration: none;
+  color: #0000FF;
+}
