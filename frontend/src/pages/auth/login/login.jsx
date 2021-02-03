@@ -1,6 +1,7 @@
 import React from "react";
 import { AuthPageLayout } from "../layout";
 import { Form } from "../components";
+import { api } from "../../../api";
 
 export function Login() {
   const formProps = {
@@ -8,7 +9,7 @@ export function Login() {
     linkName: "Регистрация ->",
     linkUrl: "/registration",
     confirmButtonName: "Войти",
-    confirmButtonOnClick: ({ email, password }) => console.log({ email, password }),
+    confirmButtonOnClick: ({ email, password }) => api.user.login({ email, password }),
   }
 
   return (

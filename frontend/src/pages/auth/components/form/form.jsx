@@ -10,6 +10,8 @@ export function Form(props) {
   const onChangeEmail = (e) => setEmail(e.target.value);
   const onChangePassword = (e) => setPassword(e.target.value);
 
+  const confirm = () => props.confirmButtonOnClick({ email, password });
+
   return (
     <div className="form">
       <div className="title">{props.title}</div>
@@ -29,7 +31,7 @@ export function Form(props) {
       />
       <div className="buttons">
         <Link className="link" to={props.linkUrl} children={props.linkName} />
-        <Button name={props.confirmButtonName} onClick={props.confirmButtonOnClick} className="confirm_button" />
+        <Button name={props.confirmButtonName} onClick={confirm} className="confirm_button" />
       </div>
     </div>
   );
