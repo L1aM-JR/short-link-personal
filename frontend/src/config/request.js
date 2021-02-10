@@ -5,7 +5,7 @@ export async function request(url, method="post", body, headers = { 'content-typ
     if (body) {
       body = JSON.stringify(body);
     }
-    console.log({ body });
+
     const result = await fetch(`${hostName}${url}`, { method, body, headers });
     const data = await result.json();
 
